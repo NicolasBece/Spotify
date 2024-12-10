@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #e1dac6;
+}
+main{
+    font-family: "Poppins", sans-serif;
+    margin: 200px;
+    padding: 20px;
+    width: 500px;
+    height: 200px;
+    background: #726f59;
+    border-radius: 15px;
+    position: absolute;
+    color: #e1dac6;
+}
+
+main article{
+    text-align: left;
+    list-style: none;
+    position: relative;
+    bottom: 180px;
+    left: 180px;
+}
+
+main h2{
+    margin: 8px 0;
+}
+
+main p{
+    margin: 0 0 10px 0;
+}
+
+section .tilin{
+    border-radius: 20px;
+    border: 1px #e1dac6 solid;
+}
+
+main article #progreso{
+    appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+    border-radius: 20px;
+    top: 25px;
+    right: 180px;
+    width: 260px;
+    height: 7px;
+    background-color: #e1dac6;
+}
+
+main article #progreso::-webkit-slider-thumb{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 16px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+
+    background: #e1dac6;
+}
+
+main article #control-volumen{
+    appearance: none;
+    -webkit-appearance: none;
+    position: absolute;
+    border-radius: 20px;
+    width: 100px;
+    height: 7px;
+    background-color: #e1dac6;
+    display: none;
+    top: 97px;
+    left: 180px;
+}
+
+
+main article #control-volumen::-webkit-slider-thumb{
+    
+    appearance: none;
+    -webkit-appearance: none;
+    width: 16px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: #e1dac6;
+    position: relative;
+
+
+    
+}
+main article .volume:hover + #control-volumen, #control-volumen:hover{
+    display: block;
+}
+
+h1,h2,h3,p{
+    font-family: 'Poppins';
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    padding: 0 3px;
+    margin: 0;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover{
+    transform: scale(1.14);
+}

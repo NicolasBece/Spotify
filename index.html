@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main>
+        <section id="reproductor">
+                <div><img class="tilin" src="01-Frontend/images/cover.png" alt=""></div>
+                <article>
+                    <h2>Chromakopia</h2>
+                    <p>Like Him</p>
+                    <audio id="cancion" class="audio" src="01-Frontend/audio/Like Him.mp3"></audio>
+                    <button class="play"><img src="01-Frontend/images/btn-play.svg" alt=""></button>
+                    <button class="pause"><img src="01-Frontend/images/btn-pause.svg" alt=""></button>
+                    <button class="volume"><img src="01-Frontend/images/btn-volume.svg" alt=""></button>
+                    <input type="range" id="control-volumen" min="0" max="1" step="0.1" value="0.3">
+                    <input type="range" value="0" id="progreso">
+                </article>
+        </section>
+        
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
